@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+<body class="bg-black">
+    <div  class="h-screen flex items-center justify-center">
+    <div class="w-2/3 h-1/2 bg-blue-500 mx-auto center text-white py-20 rounded-full my-auto ">
+    <center><p class="center pb-5 text-7xl bg-black " id="display">0</p></center>
+   <center class="space-x-10 py-5 text-5xl font-bold px-10  pt-5 "> <button onclick="inc()" class="  bg-black py-2 px-5 rounded-3xl">+</button>
+    <button onclick="dec()" class=" font-bold bg-black rounded-3xl py-2 px-5">-</button></center></div></div>
+</body>
+<script>
+const inc = () => {
+    document.getElementById("display").innerHTML++
+
+}
+const dec = () => {
+    document.getElementById("display").innerHTML--
+}</script>
+
+</html>
